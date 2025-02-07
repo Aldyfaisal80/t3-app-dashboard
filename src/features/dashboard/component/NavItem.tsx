@@ -8,7 +8,7 @@ type NavItemProps = {
     size?: number;
 };
 
-export const NavItem: React.FC<NavItemProps> = ({ icon: Icon, label, href, hiddenOnMobile, size = 20 }) => {
+export const NavItem: React.FC<NavItemProps> = ({ icon: Icon, label, href, hiddenOnMobile = true, size = 20 }) => {
     return (
         <a href={href} className={`relative flex items-center justify-center font-sans text-gray-500 text-xs uppercase w-10 h-10 rounded-lg transition-all hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 ${hiddenOnMobile ? "xl:hidden" : ""}`}>
             <Icon size={size} />

@@ -20,7 +20,7 @@ export default function NotFound() {
                     onClick={() => router.back()}
                     className="mt-6 px-6 py-2 text-white bg-blue-600 hover:bg-blue-500 rounded-lg shadow-md"
                 >
-                    Go Home
+                    Go Back
                 </Button>
             </div>
         </div>
